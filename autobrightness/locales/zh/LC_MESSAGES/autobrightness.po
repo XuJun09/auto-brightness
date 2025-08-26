@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2020-09-13 14:05+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh\n"
+
+#: autobrightness/backend/powercfg.py:27
+msgid "powercfg is only for Windows!"
+msgstr "powercfg后端只支持Windows!"
+
+#: autobrightness/backend/powercfg.py:108
+msgid "Display Brightness GUID:"
+msgstr "显示器亮度 GUID:"
+
+#: autobrightness/backend/powercfg.py:109
+
+#: autobrightness/backend/sysfs.py:24
+msgid " is not writable!"
+msgstr "不可写！"
+
+#: autobrightness/backend/sysfs.py:83
+msgid "Interface:"
+msgstr "接口："
+
+#: autobrightness/brightness.py:27
+msgid "Can't open video device"
+msgstr "无法启动视频设备"
+
+#: autobrightness/brightness.py:54
+msgid "Adjusting brightness to %(percentage)d%% (%(value)d)"
+msgstr "将亮度调整至%(percentage)d%% (%(value)d)"
+
+#: autobrightness/daemon.py:18
+msgid "Starting daemon..."
+msgstr "启动守护进程..."
+
+#: autobrightness/daemon.py:35
+msgid "Shortcut key used."
+msgstr "正在使用热键"
+
+#: autobrightness/daemon.py:77
+msgid "No interval nor shortcut selected. "
+msgstr "自动检测间隔和热键均未启用。"
+
+#: autobrightness/daemon.py:103
+msgid "Full screen check activated."
+msgstr "已启用全屏检测"
+
+#: autobrightness/daemon.py:113
+msgid "Detected full screen mode"
+msgstr "检测到全屏模式"
+
+#: autobrightness/daemon.py:119
+msgid "Exiting from full screen mode"
+msgstr "已从全屏模式下退出"
+
+#: autobrightness/gui/aboutwindow.py:12 autobrightness/gui/trayicon.py:30
+msgid "About"
+msgstr "关于"
+
+#: autobrightness/gui/camerawindow.py:11
+msgid "Camera Test"
+msgstr "测试摄像头"
+
+#: autobrightness/gui/camerawindow.py:56
+msgid "Image Brightness"
+msgstr "图片亮度"
+
+#: autobrightness/gui/camerawindow.py:57
+msgid "Backend"
+msgstr "后端"
+
+#: autobrightness/gui/camerawindow.py:58
+msgid "Disable Auto Exposure"
+msgstr "禁用自动曝光"
+
+#: autobrightness/gui/camerawindow.py:58
+msgid "not supported"
+msgstr "不支持"
+
+#: autobrightness/gui/camerawindow.py:58
+msgid "supported"
+msgstr "支持"
+
+#: autobrightness/gui/camerawindow.py:59
+msgid "Properties"
+msgstr "属性"
+
+#: autobrightness/gui/camerawindow.py:60
+msgid "OpenCV Build Information"
+msgstr "OpenCV 版本信息"
+
+#: autobrightness/gui/logwindow.py:11
+msgid "Daemon Logs"
+msgstr "守护进程日志"
+
+#: autobrightness/gui/settingscontroller.py:25
+msgid "disabled"
+msgstr "已禁用"
+
+#: autobrightness/gui/settingscontroller.py:26
+msgid "seconds"
+msgstr "秒"
+
+#: autobrightness/gui/settingscontroller.py:27
+msgid "minutes"
+msgstr "分"
+
+#: autobrightness/gui/settingscontroller.py:114
+msgid "Close this message and press a key or key combination. "
+msgstr "关闭本对话框并按任意键或组合键。"
+
+#: autobrightness/gui/settingscontroller.py:118
+msgid "Press again."
+msgstr "再次按下。"
+
+#: autobrightness/gui/settingscontroller.py:162
+msgid "Can't get frame from camera."
+msgstr "无法从摄像头获取画面。"
+
+#: autobrightness/gui/settingscontroller.py:165
+msgid "Can't open device."
+msgstr "无法启动设备"
+
+#: autobrightness/gui/settingscontroller.py:172
+msgid "Will test min and max brightness via the selected backend."
+msgstr "将会使用选择的后端测试最小和最大亮度。"
+
+#: autobrightness/gui/settingswindow.py:12 autobrightness/gui/trayicon.py:22
+msgid "Settings"
+msgstr "设置"
+
+#: autobrightness/gui/settingswindow.py:28
+msgid "Save"
+msgstr "保存"
+
+#: autobrightness/gui/settingswindow.py:40
+msgid "Language:"
+msgstr "语言/Language"
+
+#: autobrightness/gui/settingswindow.py:50
+msgid "Backend:"
+msgstr "后端"
+
+#: autobrightness/gui/settingswindow.py:55
+msgid "Test Backend"
+msgstr "测试后端"
+
+#: autobrightness/gui/settingswindow.py:67
+msgid "Gain"
+msgstr "增益"
+
+#: autobrightness/gui/settingswindow.py:78
+msgid "Test Camera"
+msgstr "测试摄像头"
+
+#: autobrightness/gui/settingswindow.py:81
+msgid "Camera:"
+msgstr "摄像头："
+
+#: autobrightness/gui/settingswindow.py:97
+msgid "Interval:"
+msgstr "检测间隔："
+
+#: autobrightness/gui/settingswindow.py:107
+msgid "Select Shortcut"
+msgstr "选择热键"
+
+#: autobrightness/gui/settingswindow.py:111
+msgid "Shortcut:"
+msgstr "热键："
+
+#: autobrightness/gui/settingswindow.py:117
+msgid "Max brightness on full screen"
+msgstr "在全屏时设置为最大亮度"
+
+#: autobrightness/gui/settingswindow.py:121
+msgid "Set brightness on startup"
+msgstr "启动时设置亮度"
+
+#: autobrightness/gui/trayicon.py:26
+msgid "Daemon logs"
+msgstr "守护进程日志"
+
+#: autobrightness/gui/trayicon.py:34
+msgid "Quit"
+msgstr "退出"

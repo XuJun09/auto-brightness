@@ -69,15 +69,15 @@ class Powercfg(IBackend):
         return False
 
     def getMaxBrightness(self):
-        maxBrightness = self._subprocess("Maximum Possible Setting: (.*?)$")
+        maxBrightness = self._subprocess("最大可能的设置: (.*?)$")
         if maxBrightness is None:
             return 100
         return int(maxBrightness, 16)
 
     def getBrightness(self):
         if self._isAC():
-            return int(self._subprocess("Current AC Power Setting Index: (.*?)$"), 16)
-        return int(self._subprocess("Current DC Power Setting Index: (.*?)$"), 16)
+            return int(self._subprocess("当前交流电源设置索引: (.*?)$"), 16)
+        return int(self._subprocess("当前直流电源设置索引: (.*?)$"), 16)
 
     def setBrightness(self, val):
         if self._isAC():
@@ -97,7 +97,7 @@ class Powercfg(IBackend):
                 line = line.rstrip()
 
                 # search for GUIDs and add them to combo box
-                if re.search("Power Setting GUID:", line):
+                if re.search("电源设置 GUID:", line):
                     self.guidCombo.addItem(line)
                     # select item if a GUID is available from settings
                     if not self.guid is None and re.search(self.guid, line):
@@ -111,7 +111,7 @@ class Powercfg(IBackend):
     def configSave(self):
         if hasattr(self, "args"):
             # get GUID from combo box selected item
-            guid = re.search("Power Setting GUID: (.*?) ", self.guidCombo.currentText())
+            guid = re.search("电源设置 GUID: (.*?) ", self.guidCombo.currentText())
             guid = guid.group(1)
             self.guid = guid
             self.settings.setOption("powercfg", "guid", guid)
