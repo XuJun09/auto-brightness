@@ -39,7 +39,9 @@ class Powercfg(IBackend):
 
         if self.guid is None:
             return None
-        result = subprocess.check_output(["POWERCFG", "/Q"], **self.args)
+        args = self.args.copy()
+        args['encoding'] = 'gbk'
+        result = subprocess.check_output(["POWERCFG", "/Q"], **args)
         foundguid = False
         
         for line in result.split("\n"):
@@ -58,7 +60,9 @@ class Powercfg(IBackend):
         """
         Is computer plugged to AC power?
         """
-        result = subprocess.check_output(["wmic", "path", "Win32_Battery", "Get", "BatteryStatus"], **self.args)
+        args = self.args.copy()
+        args['encoding'] = 'gbk'
+        result = subprocess.check_output(["wmic", "path", "Win32_Battery", "Get", "BatteryStatus"], **args)
         for line in result.split("\n"):
             line = line.rstrip()
             try:
@@ -91,7 +95,9 @@ class Powercfg(IBackend):
             form = QFormLayout()
             self.guidCombo = QComboBox()
 
-            result = subprocess.check_output(["POWERCFG", "/Q"], **self.args)
+            args = self.args.copy()
+            args['encoding'] = 'gbk'
+            result = subprocess.check_output(["POWERCFG", "/Q"], **args)
             currentIndex = 0
             for line in result.split("\n"):
                 line = line.rstrip()
